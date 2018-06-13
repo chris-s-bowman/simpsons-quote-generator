@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  padding: 0;
+  text-align: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 20%;
+  grid-gap: 25px;
+
+}
+
+.quote,
+button {
+  grid-column: 2;
+}
+
+button {
+  width: 80px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin: auto;
+  position:fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0.5;
+  outline:none;
+}
+
+.quote {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  grid-column: span 3;
+  margin: 13px;
+}
+
+
+
+h1 ,
+h3 {
+  color: #2f3336;
+  font-family: 'Lora', serif;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+
+}
